@@ -3,7 +3,7 @@
 <% content_for :page_actions do %>
   <% if can?(:create, Spree::Page) %>
     <li>
-      <%= link_to t("spree.new_page"), new_object_url, icon: 'plus' %>
+      <%= link_to_with_icon 'plus', t("spree.new_page"), new_object_url, class: 'btn btn-primary' %>
     </li>
   <% end %>
 <% end %>
